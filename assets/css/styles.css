@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -57,9 +56,9 @@ i {
     font-size: 34px;
   }
   .header-logo img {
-    max-width: 260px; /* Ajuste o tamanho máximo da logo para dispositivos móveis conforme necessário */
-    width: 100%; /* Garante que a largura seja responsiva */
-    margin: 0 auto; /* Adiciona um espaço acima da logo */
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
   }
   .header-button {
     display: none;
@@ -82,7 +81,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(/assets/img/wallpaper.jpg);
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(./assets/img/wallpaper.jpg);
   left: 0;
   top: 0;
   width: 100%;
