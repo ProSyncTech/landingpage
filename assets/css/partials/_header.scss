@@ -1,0 +1,68 @@
+header{
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+i{
+    color: $white-normal;
+}
+
+.header-icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    
+}
+
+.header-icons a:hover i{
+    
+    animation: translateY 0.8s infinite alternate;
+color: $red-light;
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    max-width: 350px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+
+@media screen and (max-width: 769px){
+    .header-content{
+        
+        flex-direction: column;
+       text-align: center;
+    }
+
+    i{
+        margin-top: 16px;
+        font-size: 34px;
+    }
+
+    .header-logo img {
+        max-width: 260px; /* Ajuste o tamanho máximo da logo para dispositivos móveis conforme necessário */
+        width: 100%; /* Garante que a largura seja responsiva */
+        margin: 0 auto; /* Adiciona um espaço acima da logo */
+    }
+
+    .header-button{
+        display: none;
+    }
+}
