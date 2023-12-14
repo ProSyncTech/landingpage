@@ -66,3 +66,54 @@ color: $red-light;
         display: none;
     }
 }
+@media screen and (max-width: 480px){
+    .hero h1{
+        font: size 24px;
+    }
+}
+
+.equipe{
+    display: flex;
+    padding: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    color: $white-normal;
+
+}
+
+// ------------
+
+.about{
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 14px;
+
+    img{
+        border-radius: 40px;
+        max-width: 300px;
+    }
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+about-description{
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
