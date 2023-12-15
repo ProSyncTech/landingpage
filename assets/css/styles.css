@@ -5,14 +5,45 @@
   outline: 0;
 }
 
+body {
+  font-family: "Sora", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #06121e;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
+
 header {
   width: 100%;
 }
 
 .header-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100%;
+  padding: 15px 0;
 }
 
 i {
@@ -20,9 +51,9 @@ i {
 }
 
 .header-icons {
+  margin-top: 25px;
   display: flex;
-  gap: 10px;
-  margin-top: 30px;
+  gap: 15px;
 }
 
 .header-icons a:hover i {
@@ -47,6 +78,50 @@ i {
 }
 
 @media screen and (max-width: 769px) {
+  
+  .header-icons{
+    margin-top: 10px;
+  }
+  .hero-container {
+    padding: 15px 20px;
+    min-height: 60vh;
+  }
+
+  .team{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .imagemequipe{
+    max-width: 150px;
+    min-width: 100px;
+    max-height: 150px;
+    min-height: 100px;
+  }
+
+  .about-content{
+    text-align: center;
+  }
+
+  .about-description p{
+    padding: 10px;
+    
+  }
+  
+  h1 {
+    font-size: 34px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  p {
+    font-size: 14px;
+  }
+  .bg-home::before {
+    background-position: center top;
+    background-size: cover;
+  }
   .header-content {
     flex-direction: column;
     text-align: center;
@@ -64,16 +139,17 @@ i {
     display: none;
   }
 }
+
 @media screen and (max-width: 480px) {
   .hero h1 {
     font: size 24px;
   }
 }
+
 .team {
-  display: flex;
-  padding: 30px;
+  text-align: center;
   margin-top: 30px;
-  justify-content: center;
+  margin-bottom: 30px;
   color: #fff;
 }
 
@@ -87,12 +163,11 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 14px;
 }
 .about-content img {
   border-radius: 30px;
-  min-width: 180px;
-  max-width: 350px;
+  width: 200px;
+  height: auto;
 }
 
 hr {
@@ -113,9 +188,11 @@ hr {
 
 .bg-home {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  position: relative;
 }
 
 .bg-home::before {
@@ -128,7 +205,7 @@ hr {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.9;
@@ -140,14 +217,20 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.hero-container h1 {
   text-align: center;
-  line-height: 100%;
-  max-width: 940px;
-  font-size: 36px;
+  min-height: calc(100vh - 30px);
+  padding: 15px 0;
 }
-.hero-container p {
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+p {
   text-align: center;
   margin: 14px 0;
 }
@@ -161,12 +244,12 @@ hr {
   font-size: 18px;
   font-weight: 600;
   margin: 14px 0;
+  cursor: pointer;
 }
 
 .button-contact:hover {
   animation: scaleButton 0.8s alternate infinite;
 }
-
 @keyframes scaleButton {
   from {
     transform: scale(1);
@@ -175,49 +258,3 @@ hr {
     transform: scale(1.07);
   }
 }
-@media screen and (max-width: 760px) {
-  .hero {
-    min-height: 60vh;
-  }
-  h1 {
-    font-size: 34px;
-    padding: 0 14px;
-    width: 100%;
-  }
-  p {
-    font-size: 14px;
-  }
-  .bg-home::before {
-    background-position: center top;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero h1 {
-    font-size: 24px;
-  }
-}
-body {
-  font-family: "Sora", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-color: #06121e;
-}
-
-button {
-  font-family: "Sora", sans-serif;
-  cursor: pointer;
-}
-
-svg {
-  width: 100%;
-}
-
-img {
-  width: 100%;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-}/*# sourceMappingURL=styles.css.map */

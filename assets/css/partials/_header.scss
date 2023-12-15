@@ -4,8 +4,11 @@ header{
 
 .header-content{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+    padding: 15px 0;
    
 }
 
@@ -14,10 +17,9 @@ i{
 }
 
 .header-icons{
+    margin-top: 25px;
     display: flex;
-    gap: 10px;
-    margin-top: 30px;
-    
+    gap: 15px;
 }
 
 .header-icons a:hover i{
@@ -72,13 +74,10 @@ color: $red-light;
     }
 }
 
-.team{
-    display: flex;
-    padding: 30px;
-    margin-top: 30px;
-    justify-content: center;
+.team {
+  text-align: center;
+  margin-top: 20px;
     color: $white-normal;
-
 }
 
 // ------------
@@ -94,12 +93,12 @@ color: $red-light;
    
     align-items: center;
     justify-content: space-evenly;
-    gap: 14px;
+   
 
     img{
         border-radius: 30px;
-        min-width: 180px;
-        max-width: 350px;
+        width: 200px;
+        height: auto;
     }
 }
 
